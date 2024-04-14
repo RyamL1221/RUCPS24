@@ -1,14 +1,14 @@
 import java.io.*;
 import java.util.*;
  
- 
-public class JavaTemplate{
-   public static void main(String[] args) {
-    MyScanner sc = new MyScanner();
-    out = new PrintWriter(new BufferedOutputStream(System.out));
+// Passes 41/41 test cases
+public class IlluminatedLights{
+    public static void main(String[] args) {
+        MyScanner sc = new MyScanner();
+        out = new PrintWriter(new BufferedOutputStream(System.out));
         
         // Start writing your solution here. -------------------------------------
-
+    
         /*
         int n      = sc.nextInt();        // read input as integer
         long k     = sc.nextLong();       // read input as long
@@ -19,7 +19,20 @@ public class JavaTemplate{
         int result = 3*n;
         out.println(result);                    // print via PrintWriter
         */
-
+        int t = sc.nextInt();
+        for(int i = 0; i < t; i++) {
+            int n = sc.nextInt();
+            String s = sc.next();
+            if(n == 1) {
+                out.println(1);
+                continue;
+            }
+            if(s.substring(0, 1).equals("R") || s.substring(s.length() - 1, s.length()).equals("L")){
+                out.println(1);
+                continue;
+            }
+            out.println(2);
+        }
         // Stop writing your solution here. -------------------------------------
         out.close();
     }
@@ -72,5 +85,5 @@ public class JavaTemplate{
         }
 
     }
-//--------------------------------------------------------
+   //--------------------------------------------------------
 }

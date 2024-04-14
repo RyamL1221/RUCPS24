@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
  
- // Passes 10/10 test cases
+ // Passes 10/10 test
 public class GuessTheNumber{
    public static void main(String[] args) {
       MyScanner sc = new MyScanner();
