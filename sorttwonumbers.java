@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
  
  
-public class sorttwonumbers{
+public class sorttwonumbers {
    public static void main(String[] args) {
         MyScanner sc = new MyScanner();
         out = new PrintWriter(new BufferedOutputStream(System.out));
