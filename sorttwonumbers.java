@@ -1,8 +1,8 @@
 import java.io.*;
 import java.util.*;
  
- 
-public class sorttwonumbers {
+// Passes 16/16 test cases
+public class SortTwoNumbers {
    public static void main(String[] args) {
         MyScanner sc = new MyScanner();
         out = new PrintWriter(new BufferedOutputStream(System.out));
